@@ -70,6 +70,7 @@ ios_webkit_debug_proxy -f chrome-devtools://devtools/bundled/inspector.html
 	remotedebug_ios_webkit_adapter --port=9222// ios-webkit-debug-proxy 將自動啟動
 	```
 	* 下完啟動指令後一樣檢查是否連線成功，並刷新chrome://inspect/#devices頁面，再點擊inspect執行網頁監測。
+	* 補充:如果還是沒有畫面有可能是port被佔用問題，可以換9000或其他port試試看，換port記得要在chrome://inspect/#devices頁面的Configure...按鈕設定新的port位
 ### 後記
 1. hrome也會偶爾檢測不到或者比較卡的情況，這時候可能需要在powershell重下啟動指令remote debug-ios-webkit-adapter，或是先嘗試關掉檢查網頁再點擊inspect開啟
 2. 有時會發生監測視窗閃退為正常狀況，再重新開視窗即可。
